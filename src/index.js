@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import axios from 'axios'
+import {BrowserRouter} from 'react-router-dom'
+import './Css/index.css';
 import registerServiceWorker from './registerServiceWorker';
+import Routers from './Route/index'
 
-console.log(process.env)
-axios.get(`/feed/1.0.0/update.json`).then(res => {
-  console.log(res)
-});
-ReactDOM.render(<App/>, document.getElementById('root'));
+ReactDOM.render(
+  <BrowserRouter>
+    <div>
+      {Routers()}
+    </div>
+  </BrowserRouter>,
+  document.getElementById('root')
+)
 registerServiceWorker();
