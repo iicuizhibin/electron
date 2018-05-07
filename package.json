@@ -2,8 +2,8 @@
   "name": "hengcai",
   "productName": "hengcai",
   "author": "zz",
-  "version": "0.1.0",
-  "description": "0.1.0 版本",
+  "version": "1.0.0",
+  "description": "1.0.0 版本",
   "main": "main.js",
   "private": true,
   "updater": {

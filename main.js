@@ -2,7 +2,7 @@
 const {app, BrowserWindow} = require('electron')
 const path = require('path')
 const url = require('url')
-const update = require('./update')
+// const update = require('./update')
 // 保持window对象的全局引用,避免JavaScript对象被垃圾回收时,窗口被自动关闭.
 let mainWindow
 
@@ -31,7 +31,7 @@ function createWindow() {
   mainWindow.on('closed', function () {
     mainWindow = null
   })
-  update.updateHandle(mainWindow)
+  // update.updateHandle(mainWindow)
 }
 
 // 当 Electron 完成初始化并准备创建浏览器窗口时调用此方法
