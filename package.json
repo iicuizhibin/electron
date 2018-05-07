@@ -4,7 +4,7 @@
   "author": "zz",
   "version": "1.0.0",
   "description": "1.0.0 版本",
-  "main": "main.js",
+  "main": "electron.js",
   "private": true,
   "updater": {
     "url": "http://10.63.15.242/feed/1.0.0/update.json"

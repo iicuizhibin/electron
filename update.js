@@ -32,12 +32,12 @@ function updateHandle(mainWindow) {
   });
 
   updater.on('update-not-available', () => {
-    dialog.showMessageBox(mainWindow, {
-      type: 'info',
-      buttons: ['确定'],
-      title: AppName,
-      message: Message.updateNotAvailabe
-    });
+    // dialog.showMessageBox(mainWindow, {
+    //   type: 'info',
+    //   buttons: ['确定'],
+    //   title: AppName,
+    //   message: Message.updateNotAvailabe
+    // });
   });
 
   updater.on('update-downloading', () => {
